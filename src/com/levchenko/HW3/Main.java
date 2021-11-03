@@ -7,7 +7,6 @@ public class Main {
         happyTickets();
         guess();
         calculate();
-
     }
 
     public static void happyTickets() {
