@@ -7,7 +7,6 @@ public class Main {
         happyTickets();
         guess();
         calculate();
-        System.out.println("test commit");
 
     }
 
