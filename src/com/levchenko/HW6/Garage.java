@@ -7,7 +7,7 @@ public class Garage {
             System.out.println("not enough petrol");
             flag = false;
         }
-        if (x.engine.getPower() < 200 && flag) {
+        if (x.getEngine().getPower() < 200 && flag) {
             System.out.println("power too low");
             flag = false;
         }

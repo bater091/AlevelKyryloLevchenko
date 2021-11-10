@@ -1,10 +1,17 @@
 package com.levchenko.HW6;
 
 public class Car {
-    Manufacture manufacture;
-    Engine engine;
+    private Manufacture manufacture;
+    private Engine engine;
     private String colour;
     private int petrol;
+
+    public Car(Manufacture manufacture, Engine engine, String colour) {
+        this.manufacture = manufacture;
+        this.engine = engine;
+        this.colour = colour;
+        petrol = 100;
+    }
 
     public Manufacture getManufacture() {
         return manufacture;
@@ -44,20 +51,14 @@ public class Car {
 
     public boolean isEnoughPetrolLevel() {
         boolean result;
-        if (petrol < 50) {
-            result = false;
-        } else {
+        if (petrol > 50) {
             result = true;
+        } else {
+            result = false;
         }
         return result;
     }
 
-    public Car(Manufacture manufacture, Engine engine, String colour) {
-        this.manufacture = manufacture;
-        this.engine = engine;
-        this.colour = colour;
-        petrol = 100;
-    }
 
     public Car() {
     }
@@ -65,8 +66,8 @@ public class Car {
     @Override
     public String toString() {
         return "Car " +
-                "manufacture = '" + manufacture.toString() + '\'' +
-                ", engine = '" + engine.toString() + '\'' +
+                "manufacture = '" + manufacture + '\'' +
+                ", engine = '" + engine + '\'' +
                 ", colour = '" + colour + '\'' +
                 ", petrol = " + petrol;
 
