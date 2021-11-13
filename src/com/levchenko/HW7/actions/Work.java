@@ -6,7 +6,7 @@ import com.levchenko.HW7.model.Pet;
 public class Work {
     public void work(Pet pet) {
         NegativeCoef negative = new NegativeCoef();
-        if (pet.getAge() >= 1 && pet.getHappy() > 20 && !pet.isSick()) {
+        if (pet.getAge() >= 5 && pet.getHappy() > 20 && !pet.isSick()) {
             pet.setMoney(pet.getMoney() + (int) (Math.random() * 21 + 5));
             pet.setHungry(pet.getHungry() - 4 * negative.getUnHungryCoef(pet) * negative.getUnHappyCoef(pet) * negative.getSickCoef(pet));
             pet.setHappy(pet.getHappy() - 2 * negative.getUnHungryCoef(pet) * negative.getUnHappyCoef(pet) * negative.getSickCoef(pet));

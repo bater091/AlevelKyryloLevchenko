@@ -18,7 +18,7 @@ public class Pet {
         this.type = type;
         this.age = 1;
         this.hungry = 100;
-        this.happy = 10;
+        this.happy = 50;
         this.clear = 100;
         this.presents = new String[0];
         this.sick = false;
