@@ -9,12 +9,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class SumNumbersTest {
 
 
-
     @Test
     void sumNumbersCheck() {
 
-
-        Assertions.assertEquals(5,SumNumbers.sumNumbers(23));
+        Assertions.assertEquals(5, SumNumbers.sumNumbers(23));
 
     }
 

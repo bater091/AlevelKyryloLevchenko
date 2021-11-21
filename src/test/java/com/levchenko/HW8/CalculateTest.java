@@ -29,7 +29,7 @@ public class CalculateTest {
         Mockito.when(userInput.getFirstNum()).thenReturn(2.0);
         Mockito.when(userInput.getSecondNum()).thenReturn(3.0);
         double result = calculate.numsDivis(userInput);
-        Assertions.assertTrue(result < 0);
+        Assertions.assertTrue(result > 0);
     }
 
     @Test
@@ -45,17 +45,18 @@ public class CalculateTest {
     public void numsMultip() {
         Mockito.when(userInput.getFirstNum()).thenReturn(2.0);
         Mockito.when(userInput.getSecondNum()).thenReturn(3.0);
-        Assertions.assertEquals(5, calculate.numsMultip(userInput));
+        Assertions.assertEquals(6, calculate.numsMultip(userInput));
     }
     @Test
     public void numsDivisCheckZero() {
-        Mockito.when(userInput.getFirstNum()).thenReturn(2.0);
-        Assertions.assertTrue(userInput.getFirstNum() == 0);
+        Mockito.when(userInput.getFirstNum()).thenReturn(0.0);
+        Mockito.when(userInput.getSecondNum()).thenReturn(3.0);
+        Assertions.assertEquals(0, calculate.numsDivis(userInput));
     }
     @Test
     public void numsDivis() {
-        Mockito.when(userInput.getFirstNum()).thenReturn(2.0);
+        Mockito.when(userInput.getFirstNum()).thenReturn(6.0);
         Mockito.when(userInput.getSecondNum()).thenReturn(3.0);
-        Assertions.assertEquals(5, calculate.numsDivis(userInput));
+        Assertions.assertEquals(2, calculate.numsDivis(userInput));
     }
 }
