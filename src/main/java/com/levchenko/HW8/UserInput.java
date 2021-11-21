@@ -1,12 +1,17 @@
 package com.levchenko.HW8;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
+
+
 
 import java.util.Scanner;
 
 @Setter
 @Getter
+
+
 public class UserInput {
     private double firstNum;
     private double secondNum;
