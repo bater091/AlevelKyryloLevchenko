@@ -22,7 +22,7 @@ public class Calculate {
         if (userInput.getFirstNum() != 0) {
             return userInput.getFirstNum() / userInput.getSecondNum();
         } else {
-            return 0;
+            return -1;
         }
     }
 }

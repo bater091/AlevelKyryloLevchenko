@@ -51,7 +51,7 @@ public class CalculateTest {
     public void numsDivisCheckZero() {
         Mockito.when(userInput.getFirstNum()).thenReturn(0.0);
         Mockito.when(userInput.getSecondNum()).thenReturn(3.0);
-        Assertions.assertEquals(0, calculate.numsDivis(userInput));
+        Assertions.assertEquals(-1, calculate.numsDivis(userInput));
     }
     @Test
     public void numsDivis() {

@@ -12,6 +12,12 @@ class SumNumbersTest {
         Assertions.assertEquals(5, SumNumbers.sumNumbers(23));
 
     }
+    @Test
+    void sumNumbersCheckPos() {
+
+        Assertions.assertEquals(-1, SumNumbers.sumNumbers(-2));
+
+    }
 
 
 }
