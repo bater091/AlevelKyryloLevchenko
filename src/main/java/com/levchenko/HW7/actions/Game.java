@@ -5,7 +5,7 @@ import com.levchenko.HW7.model.NegativeCoef;
 import com.levchenko.HW7.model.Pet;
 
 public class Game {
-    NegativeCoef negative = new NegativeCoef();
+      NegativeCoef negative = new NegativeCoef();
 
     public void playGame(Pet pet) {
         pet.setHungry(pet.getHungry() - 3 * negative.getUnHungryCoef(pet) * negative.getUnHappyCoef(pet) * negative.getSickCoef(pet));

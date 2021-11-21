@@ -1,5 +1,7 @@
 package com.levchenko.MODULE1;
 
+import lombok.Getter;
+
 import java.util.Arrays;
 
 public class Lock {
