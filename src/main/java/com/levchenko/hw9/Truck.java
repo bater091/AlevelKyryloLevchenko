@@ -15,8 +15,8 @@ public class Truck extends Car implements Recovery {
 
     @Override
     void stats() {
-        System.out.printf("series: %s year: %s color: %s fuel: %s\n",
-                getSeries(), getYear(), getColor(), getFuel());
+        System.out.printf("series: %s year: %s color: %s fuel: %s cargo: %s\n",
+                getSeries(), getYear(), getColor(), getFuel(),cargo);
     }
 
     void takeCargo(String cargo) {
