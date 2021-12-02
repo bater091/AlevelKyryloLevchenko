@@ -22,11 +22,11 @@ public class PhoneBook {
             if (PHONE_BOOK[i].equals(phoneNumber)) {
                 return Optional.of(i);
             }
-            }
-        return Optional.empty();
         }
-
+        return Optional.empty();
     }
+
+}
 
 
 
