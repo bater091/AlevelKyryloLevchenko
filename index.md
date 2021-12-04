@@ -2,31 +2,44 @@
 
 В основе интерполяционного поиска лежит операция интерполирование. Интерполирование – нахождение промежуточных значений величины по имеющемуся дискретному набору известных значений. Интерполяционный поиск работает только с упорядоченными массивами; он похож на бинарный, в том смысле, что на каждом шаге вычисляется некоторая область поиска, которая, по мере выполнения алгоритма, сужается.
  Но в отличие от двоичного, интерполяционный поиск не делит последовательность на две равные части, а вычисляет приблизительное расположение ключа (искомого элемента), ориентируясь на расстояние между искомым и текущим значением элемента.
-### Markdown
 
 Формула, определяющая алгоритм интерполяционного поиска выглядит следующим образом:
-а
+
+![image](https://user-images.githubusercontent.com/93033975/144714080-e2082b36-f4a8-4abf-be21-da384bbd468d.png)
 
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](asd)
+## Пример Интерполяционного поиска
 ```
+public int interpolationSearch(int[] sortedArray, int toFind) {
+    // Возвращает индекс элемента со значением toFind или -1, если такого элемента не существует
+    int mid;
+    int low = 0;
+    int high = sortedArray.length - 1;
 
-sgfsgfsfgg
-sgf
-sdgf
-fd
-sgfd
-sgfd
+    while (sortedArray[low] < toFind && sortedArray[high] > toFind) {
+        if (sortedArray[high] == sortedArray[low]) 
+            break;
+        mid = low + ((toFind - sortedArray[low]) * (high - low)) / (sortedArray[high] - sortedArray[low]);
 
+        if (sortedArray[mid] < toFind)
+            low = mid + 1;
+        else if (sortedArray[mid] > toFind)
+            high = mid - 1;
+        else
+            return mid;
+    }
+
+    if (sortedArray[low] == toFind)
+        return low;
+    if (sortedArray[high] == toFind)
+        return high;
+
+    return -1; // Not found
+}
+```
+В худшем случаи временная сложность такого алгоритма равна = **О**(**N**)
+
+## Применения 
+Алгоритм полезно применять для равномерно распределенных данных вроде телефонной книги
