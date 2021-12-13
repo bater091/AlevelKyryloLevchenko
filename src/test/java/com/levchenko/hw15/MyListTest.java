@@ -9,13 +9,17 @@ import static org.junit.Assert.*;
 
 public class MyListTest {
     MyList<String> myList = new MyList<>();
-
+    MyList<String> myListEmpty = new MyList<>();
 
     @Before
     public void set() {
         myList.add("test1");
         myList.add("test2");
         myList.add("test3");
+    }
+    @Test
+    public void getFromLastEmpty(){
+        Assert.assertNull(myListEmpty.getFromLast("test"));
     }
 
     @Test

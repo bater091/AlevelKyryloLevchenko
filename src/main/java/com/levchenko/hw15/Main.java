@@ -6,6 +6,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+
         Box box1 = new Box(3);
         Box box2 = new Box(0);
         Box box3 = new Box(0);

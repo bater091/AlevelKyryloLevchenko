@@ -32,6 +32,9 @@ public class MyList<E> {
     public E getFromLast(E value) {
         MyNode<E> temp = tail;
 
+        if(head == null ){
+            return null;
+        }
         while (!value.equals(temp.getValue())) {
             if (temp == head && temp.getValue() != value) {
                 return null;
