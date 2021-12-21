@@ -50,5 +50,6 @@ public class VocabularyFrequency {
         for (String s1 : v.keySet()) {
             System.out.println(s1);
         }
+
     }
 }
