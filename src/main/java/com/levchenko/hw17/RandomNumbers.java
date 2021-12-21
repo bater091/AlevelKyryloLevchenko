@@ -12,9 +12,7 @@ public class RandomNumbers {
         for (int i = 0; i < 15; i++) {
             list.add((int) (Math.random() * 10 - 5));
         }
-        for (Integer aDouble : list) {
-            System.out.print(aDouble + " ");
-        }
+        System.out.println(list.toString());
         IntSummaryStatistics intSummaryStatistics = list.stream().
                 filter(num -> num >= 0).
                 collect(IntSummaryStatistics::new,

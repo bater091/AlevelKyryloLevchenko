@@ -1,10 +1,13 @@
 package com.levchenko.hw17.lastTask;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,15 +32,14 @@ public class Main {
         list.add(new Box(itemList, 3));
         list.add(new Box(itemList, 8));
         list.add(new Box(itemList, 15));
-
-        list.stream().
-                filter(s -> s.getSize() > limitChoose(list)).
-                map(Box::getArr).
-                map(s -> s.stream().
-                        map(Item::getCost).
-                        sorted().
-                        collect(Collectors.toList())).
-
+        list.stream()
+                .flatMap(s -> s.getArr().stream()).
+                sorted(new Comparator<Item>() {
+                    @Override
+                    public int compare(Item o1, Item o2) {
+                        return o1.getCost() - o2.getCost();
+                    }
+                }).
                 forEach(System.out::println);
 
 

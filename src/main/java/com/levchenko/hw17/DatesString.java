@@ -28,12 +28,10 @@ public class DatesString {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
 
 
-        List<LocalDate> localDates = list.stream().
+        Boolean result = list.stream().
 
 
                 map(data -> LocalDate.parse(data, formatter)).
-                collect(Collectors.toList());
-        Boolean result = localDates.stream().
                 anyMatch(localDate -> localDate.getYear() == 2021);
         System.out.println(result);
 
