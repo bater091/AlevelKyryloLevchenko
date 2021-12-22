@@ -33,6 +33,7 @@ public class Main {
         list.add(new Box(itemList, 8));
         list.add(new Box(itemList, 15));
         list.stream()
+                .filter(s-> s.getSize() < limitChoose(list))
                 .flatMap(s -> s.getArr().stream()).
                 sorted(new Comparator<Item>() {
                     @Override
