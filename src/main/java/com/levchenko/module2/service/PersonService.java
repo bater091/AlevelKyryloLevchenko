@@ -10,7 +10,7 @@ public class PersonService {
     private static final StringBuilder stringBuilder = new StringBuilder();
 
     public static Customer createCustomer() {
-
+        stringBuilder.delete(0, stringBuilder.length());
         String customerEmail = new BigInteger(25, random).toString(32);
         stringBuilder.append(customerEmail);
         stringBuilder.append("@gmail.com");

@@ -42,7 +42,7 @@ public class ShopService {
                     e.printStackTrace();
                     continue;
                 }
-                if ((int) (Math.random() * 9 + 1) % 2 == 0) {
+                if ((int) (Math.random() * 99 + 1) < 50) {
                     if (result[0].equals("Telephone")) {
                         list.add(new Telephone(result[1], result[4], Integer.parseInt(result[6]), result[1], result[0]));
                     } else {

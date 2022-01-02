@@ -9,8 +9,8 @@ import java.util.stream.Collectors;
 
 public class ShopData {
     public static void info(Map<Customer, Invoice> map) {
-        System.out.println("Телефоны " + typeCount(map, "Television"));
-        System.out.println("Телевизоры " + typeCount(map, "Telephone"));
+        System.out.println("Телевизоры " + typeCount(map, "Television"));
+        System.out.println("Телефоны " + typeCount(map, "Telephone"));
         System.out.println("Минимальный заказ " + minSum(map));
         System.out.println("Общая сумма заказов " + totalSum(map));
         System.out.println("рознччные заказы " + retailInvoice(map, "retail"));
