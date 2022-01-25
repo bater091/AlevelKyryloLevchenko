@@ -28,6 +28,7 @@ public class Device {
     @Column
     private boolean availability;
     @ManyToOne
+
     private Factory factory;
     @Column
     private int factoryId;
