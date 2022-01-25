@@ -9,7 +9,7 @@ import org.hibernate.cfg.Configuration;
 
 import javax.persistence.*;
 import java.sql.Date;
-
+@Setter
 @Entity(name = "tickets")
 public class Ticket {
     @ManyToOne
