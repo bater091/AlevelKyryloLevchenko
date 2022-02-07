@@ -1,14 +1,14 @@
-package com.levchenko.hw29.a.utils;
+package com.levchenko.hw30.utils;
 
-import com.levchenko.hw29.a.model.NotifiableProduct;
-import com.levchenko.hw29.a.model.Product;
-import com.levchenko.hw29.a.model.ProductBundle;
-import com.levchenko.hw29.a.repository.ProductRepository;
+import com.levchenko.hw30.model.NotifiableProduct;
+import com.levchenko.hw30.model.Product;
+import com.levchenko.hw30.model.ProductBundle;
+import com.levchenko.hw30.repository.ProductRepository;
 
 import java.util.List;
 
 public class ProductUtils {
-    private  ProductRepository repository = new ProductRepository();
+    private ProductRepository repository = new ProductRepository();
     ProductGenerator productGenerator = new ProductGenerator();
 
     public void saveNotifiableProduct(NotifiableProduct product) {

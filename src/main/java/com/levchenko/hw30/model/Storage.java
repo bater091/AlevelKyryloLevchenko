@@ -1,4 +1,4 @@
-package com.levchenko.hw29.a.model;
+package com.levchenko.hw30.model;
 
 import lombok.Getter;
 import lombok.Setter;
