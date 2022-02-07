@@ -1,11 +1,11 @@
-package com.levchenko.hw29.model;
+package com.levchenko.hw30.model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class NotifiableProduct extends Product implements BasicInfo, GeneratbleAddressForNotification{
+public class NotifiableProduct extends Product implements BasicInfo, GeneratbleAddressForNotification {
     protected String channel;
 
 

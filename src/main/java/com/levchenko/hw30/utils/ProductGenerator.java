@@ -1,10 +1,11 @@
-package com.levchenko.hw29.utils;
+package com.levchenko.hw30.utils;
 
 import com.levchenko.hw29.model.NotifiableProduct;
 import com.levchenko.hw29.model.ProductBundle;
 import lombok.Getter;
 
 import java.util.Random;
+
 @Getter
 public class ProductGenerator {
 

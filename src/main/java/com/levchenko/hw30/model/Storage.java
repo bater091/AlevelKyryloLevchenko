@@ -1,10 +1,11 @@
-package com.levchenko.hw29.model;
+package com.levchenko.hw30.model;
 
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.HashMap;
 import java.util.Map;
+
 @Setter
 @Getter
 public class Storage {

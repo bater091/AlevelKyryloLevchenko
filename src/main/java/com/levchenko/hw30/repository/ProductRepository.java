@@ -1,5 +1,5 @@
 
-package com.levchenko.hw29.repository;
+package com.levchenko.hw30.repository;
 
 
 import com.levchenko.hw29.model.NotifiableProduct;

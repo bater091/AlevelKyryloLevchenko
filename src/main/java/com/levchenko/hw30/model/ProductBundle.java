@@ -1,9 +1,9 @@
-package com.levchenko.hw29.model;
+package com.levchenko.hw30.model;
 
 import lombok.Setter;
 
 @Setter
-public class ProductBundle extends NotifiableProduct implements BasicInfo,IProduct{
+public class ProductBundle extends NotifiableProduct implements BasicInfo, IProduct {
     protected int amount;
 
 
