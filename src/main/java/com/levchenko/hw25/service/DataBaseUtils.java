@@ -48,7 +48,9 @@ public class DataBaseUtils {
     }
     public void addSession(Session sessionFilm){
         try(org.hibernate.Session session = CreateSession.createSession()){
+            session.beginTransaction();
             session.save(sessionFilm);
+            session.getTransaction().commit();
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -56,7 +58,9 @@ public class DataBaseUtils {
     }
     public void addUser(User user){
         try(org.hibernate.Session session = CreateSession.createSession()){
+            session.beginTransaction();
             session.save(user);
+            session.getTransaction().commit();
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -64,7 +68,9 @@ public class DataBaseUtils {
     }
     public void addFilm(Film film){
         try(org.hibernate.Session session = CreateSession.createSession()){
+            session.beginTransaction();
             session.save(film);
+            session.getTransaction().commit();
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -72,7 +78,9 @@ public class DataBaseUtils {
     }
     public void addTicket(Ticket ticket){
         try(org.hibernate.Session session = CreateSession.createSession()){
+            session.beginTransaction();
             session.save(ticket);
+            session.getTransaction().commit();
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -80,7 +88,10 @@ public class DataBaseUtils {
     }
     public void deleteTicket(Ticket ticket){
         try(org.hibernate.Session session = CreateSession.createSession()){
+            session.beginTransaction();
             session.delete(ticket);
+            session.getTransaction().commit();
+
         }catch (Exception e){
             e.printStackTrace();
         }
