@@ -1,5 +1,5 @@
 
-package com.levchenko.hw30.repository;
+package com.levchenko.hw29.repository;
 
 
 import com.levchenko.hw29.model.NotifiableProduct;
@@ -10,19 +10,19 @@ import java.util.List;
 
 public class ProductRepository {
 
-  MySQLRepository mySQLRepository = new MySQLRepository();
+    MySQLRepository mySQLRepository = new MySQLRepository();
 
-  public void save(NotifiableProduct product){
-      mySQLRepository.save(product);
+    public void save(NotifiableProduct product){
+        mySQLRepository.save(product);
 
-  }
+    }
     public void save(ProductBundle product){
         mySQLRepository.save(product);
 
     }
-  public List<Product> getAll(){
-      return mySQLRepository.getAll();
-  }
+    public List<Product> getAll(){
+        return mySQLRepository.getAll();
+    }
 
     public List<NotifiableProduct> getAllNotifiable(){
         return mySQLRepository.getAllNotifiable();

@@ -1,4 +1,4 @@
-package com.levchenko.hw30;
+package com.levchenko.hw29;
 import com.levchenko.hw29.model.NotifiableProduct;
 import com.levchenko.hw29.model.Product;
 import com.levchenko.hw29.model.ProductBundle;

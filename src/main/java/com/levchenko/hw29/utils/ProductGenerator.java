@@ -1,4 +1,4 @@
-package com.levchenko.hw30.utils;
+package com.levchenko.hw29.utils;
 
 import com.levchenko.hw29.model.NotifiableProduct;
 import com.levchenko.hw29.model.ProductBundle;
@@ -9,7 +9,7 @@ import java.util.Random;
 @Getter
 public class ProductGenerator {
 
-   public Random random = new Random();
+    public Random random = new Random();
 
     public ProductBundle generateBundleProduct() {
         ProductBundle productBundle = new ProductBundle();
