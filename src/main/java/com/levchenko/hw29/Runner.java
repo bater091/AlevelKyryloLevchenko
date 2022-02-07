@@ -1,8 +1,8 @@
-package com.levchenko.hw30;
-import com.levchenko.hw30.model.NotifiableProduct;
-import com.levchenko.hw30.model.Product;
-import com.levchenko.hw30.model.ProductBundle;
-import com.levchenko.hw30.utils.ProductUtils;
+package com.levchenko.hw29;
+import com.levchenko.hw29.model.NotifiableProduct;
+import com.levchenko.hw29.model.Product;
+import com.levchenko.hw29.model.ProductBundle;
+import com.levchenko.hw29.utils.ProductUtils;
 
 import java.util.ArrayList;
 import java.util.List;
