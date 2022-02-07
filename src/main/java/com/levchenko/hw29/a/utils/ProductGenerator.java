@@ -1,8 +1,7 @@
-package com.levchenko.hw29.utils;
+package com.levchenko.hw29.a.utils;
 
-import com.levchenko.hw29.model.NotifiableProduct;
-import com.levchenko.hw29.model.Product;
-import com.levchenko.hw29.model.ProductBundle;
+import com.levchenko.hw29.a.model.NotifiableProduct;
+import com.levchenko.hw29.a.model.ProductBundle;
 import lombok.Getter;
 
 import java.util.Random;

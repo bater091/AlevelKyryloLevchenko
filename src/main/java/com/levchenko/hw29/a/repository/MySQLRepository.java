@@ -1,10 +1,9 @@
-package com.levchenko.hw29.repository;
+package com.levchenko.hw29.a.repository;
 
-import com.levchenko.hw10.model.ButtonsPhone;
-import com.levchenko.hw29.model.NotifiableProduct;
-import com.levchenko.hw29.model.Product;
-import com.levchenko.hw29.model.ProductBundle;
-import com.levchenko.hw29.model.Storage;
+import com.levchenko.hw29.a.model.NotifiableProduct;
+import com.levchenko.hw29.a.model.Product;
+import com.levchenko.hw29.a.model.ProductBundle;
+import com.levchenko.hw29.a.model.Storage;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.levchenko.hw29.model;
+package com.levchenko.hw29.a.model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
